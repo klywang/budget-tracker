@@ -16,7 +16,14 @@ This is a public repository, so never commit real account details, credentials, 
 
 ## Install
 
-Nothing to install yet. The app is still being planned; see the [master plan](https://github.com/klywang/budget-tracker/issues/1) for current status.
+The app is still being planned, so these steps only set up the development tools. See the [master plan](https://github.com/klywang/budget-tracker/issues/1) for current status.
+
+```sh
+micromamba create -n budget-tracker -c conda-forge python=3.14
+micromamba activate budget-tracker
+pip install -r requirements-dev.txt
+pre-commit install
+```
 
 ## Usage
 

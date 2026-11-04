@@ -1,0 +1,5 @@
+# Versions are pinned exactly because new ruff and mypy releases can add or
+# change checks, which could fail unchanged code. Upgrade them deliberately.
+ruff==0.17.3
+mypy==2.4.1
+pre-commit==4.7.0

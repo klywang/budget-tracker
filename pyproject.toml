@@ -1,0 +1,26 @@
+[tool.ruff]
+# Python version that decides which syntax UP suggests.
+target-version = "py314"
+
+[tool.ruff.lint]
+# Added on top of ruff's default rules (E4, E7, E9, F).
+extend-select = [
+    "I",  # isort: keep imports sorted and grouped
+    "B",  # flake8-bugbear: likely bugs, like mutable default arguments
+    "UP", # pyupgrade: outdated syntax for the target Python version
+    "S",  # flake8-bandit: security issues, like hardcoded passwords
+]
+ignore = [
+    "S101", # flags every assert, which pytest tests rely on
+]
+
+[tool.mypy]
+# Python version to check against.
+python_version = "3.14"
+# Require complete type hints on every function.
+# For edge cases, use Any or a line-level "type: ignore[error-code]".
+disallow_untyped_defs = true
+# Don't raise errors for libraries that ship no type information.
+ignore_missing_imports = true
+# Flag "type: ignore" comments that are no longer needed.
+warn_unused_ignores = true
