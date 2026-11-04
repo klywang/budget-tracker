@@ -1,2 +1,54 @@
-# Local list of financial sources: keep out of this public repo
+# --- Private data: keep out of this public repo ---
+
+# Local list of financial sources
 sources.yaml
+
+# Secrets and credentials
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Local data folder and databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# Financial exports and statements
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.ofx
+*.qfx
+*.qbo
+*.pdf
+
+# --- Standard Python ---
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Editors and OS ---
+
+.vscode/
+.idea/
+.DS_Store
