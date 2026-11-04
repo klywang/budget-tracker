@@ -18,6 +18,7 @@ repos:
         entry: mypy
         language: system
         types_or: [python, pyi]
+        exclude: ^tests/ # tests don't need type hints
 
   # gitleaks isn't a Python package, so pre-commit manages it.
   - repo: https://github.com/gitleaks/gitleaks

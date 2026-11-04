@@ -33,6 +33,15 @@ Nothing to use yet. This section will cover running the app once it exists; see 
 
 This is a personal project, so I'm not accepting pull requests right now. Questions and ideas are welcome in [issues](https://github.com/klywang/budget-tracker/issues).
 
+With the environment active, run the tests and all the checks with:
+
+```sh
+pytest
+pre-commit run --all-files
+```
+
+The checks run automatically on each commit, except `pytest`, so run the tests first.
+
 ## License
 
 [MIT](LICENSE) © Kelly Wang

@@ -24,3 +24,7 @@ disallow_untyped_defs = true
 ignore_missing_imports = true
 # Flag "type: ignore" comments that are no longer needed.
 warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+# Where pytest looks for tests.
+testpaths = ["tests"]
